@@ -1,0 +1,12 @@
+---
+title: Mindong Lab
+---
+<% 5.times do |num| %>
+    <h1 class="ms-font-su">Why, hello, world.<%=num %></h1>
+    <%= link_to 'About', '/about.html' %>
+<% end %>
+<ul>
+  <% sitemap.resources.select { |resource| resource.data.type == 'project' }.each do |talk| %>
+    <li><%= talk.data.to_json() %><%=talk.url%></li>
+  <% end %>
+</ul>
