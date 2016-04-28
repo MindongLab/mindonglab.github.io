@@ -1,0 +1,78 @@
+    body {
+        margin: 0px;
+    }
+    .ms-NavBar-openMenu i {
+        line-height: 40px;
+    }
+    .siteHeader {
+        /*z-index: 100;*/
+    }
+    .siteNavBar {
+        margin-top:10px;
+    }
+    .PageContainer {
+        max-width: 948px;
+        
+        width:100%;
+        margin: 0 auto;
+    }
+    .Carousel {
+        height:300px;
+        width:100%;
+        background-color:azure;
+    }
+    .JoinChat {
+        background-color:aliceblue;
+        min-height: 100px;
+        padding:5px;
+        height: 100%;
+        max-height:290px;
+    }
+    .ProjectListItem {
+        min-height: 200px;
+        background-color: aliceblue;
+        margin-bottom: 20px;
+        padding:5px;
+    }
+    .ProjectListItem-Title{
+        text-align: center;
+        text-overflow: ellipsis;
+        overflow:hidden;
+        white-space: nowrap;
+    }   
+    .ProjectListItem-Text{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .ProjectListItem-Image img {
+        width:100%;
+        height: auto;
+    }
+    .ProjectListItem-Buttons .ms-Button {
+        text-align: center;
+    }
+    .Footer {
+        padding:10px;
+        text-align: center;
+    }
+    .PageTitle {
+        
+        background-color:cornflowerblue;
+        color: white;
+        position: relative;
+        padding-top:45px;
+        padding-bottom:45px;
+    }
+    .PageTitle-Text {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .PageContent {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
