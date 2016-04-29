@@ -6,7 +6,8 @@
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 <link href="/vendor/fabric/css/fabric.min.css" type="text/css" rel="stylesheet" />
 <link href="/vendor/fabric/css/fabric.components.min.css" type="text/css" rel="stylesheet" />
-<link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css">
 <link href="/css/app.css" type="text/css" rel="stylesheet" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
 <meta name="apple-mobile-web-app-capable" content="yes"> 
@@ -14,41 +15,68 @@
 </head>
 
 <body>
-  <div class="ms-NavBar siteHeader">
-    <div class="ms-font-xxl">Mindong Lab</div>
-</div>
-  <div class="PageContainer">
-            <div class="ms-NavBar siteNavBar">
-            <div class="ms-NavBar-openMenu js-openMenu"><i class="ms-Icon ms-Icon--menu"></i></div>
-            <div class="ms-Overlay"></div>
-			
-            <ul class="ms-NavBar-items">
-				
-					
-                <li class="ms-NavBar-item"><a href="http://lab.mindong.asia/" class="ms-NavBar-link">Home</a></li>
-					
-				
-					
-				
-					
-                <li class="ms-NavBar-item"><a href="http://lab.mindong.asia/en/about" class="ms-NavBar-link">About</a></li>
-					
-				
-					
-				
-					
-				
-					
-                <li class="ms-NavBar-item"><a href="http://lab.mindong.asia/en/contact" class="ms-NavBar-link">Contact Us</a></li>
-					
-				
-                <li class="ms-NavBar-item ms-NavBar-item--right"><a href="http://lab.mindong.asia/zh-hans/" class="ms-NavBar-link"> 简体中文</a></li>
-                <li class="ms-NavBar-item ms-NavBar-item--right"><a href="http://lab.mindong.asia//" class="ms-NavBar-link"> English</a></li>
-				<li class="ms-NavBar-item ms-NavBar-item--right is-disabled"><a class="ms-NavBar-link"><i class="ms-Icon fa fa-language"></i> </li>
-            </ul>
-			
-        </div>
+  
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand ms-Font-xxl" href="#">Mindong Lab</a>
+    </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+		
+          
+		        <li>
+                    <a href="http://lab.mindong.asia/">Home</span>
+                    </a>
+                </li>
+        
+	    
+		
+	    
+		
+          
+		        <li>
+                    <a href="http://lab.mindong.asia/en/about">About</span>
+                    </a>
+                </li>
+        
+	    
+		
+	    
+		
+	    
+		
+          
+		        <li class="active">
+                    <a href="http://lab.mindong.asia/en/contact">Contact Us <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+        
+	    
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://lab.mindong.asia/zh-hans/">简体中文</a></li>
+            <li><a href="http://lab.mindong.asia//">English</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <div class="PageContainer">
     <div class="PageTitle">
       <div class="PageTitle-Text ms-fontSize-su ms-fontWeight-regular">Contact Us</div>
     </div>
@@ -64,6 +92,7 @@
   </div>
 </footer> <script src="http://lab.mindong.asia/vendor/jquery/jquery-1.12.3.min.js"></script>
 <script src="http://lab.mindong.asia/vendor/fabric/js/jquery.fabric.min.js"></script>
+<script src="http://lab.mindong.asia/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script>
   $(document).ready(function() {
         // Check to make sure the NavBar plugin is available, then run it
